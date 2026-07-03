@@ -13,6 +13,7 @@
 
 <details><summary>[展开/收起] 具体内容包括</summary>
 <br>
+
 - 选择 Linux 发行版和排雷避坑
 - 安装 Linux 的必做通用准备工作
 - Linux Mint、CachyOS 等易用发行版的安装和使用教程（包含Win 双系统配置）
