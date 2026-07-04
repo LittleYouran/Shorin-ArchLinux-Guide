@@ -357,11 +357,10 @@ cfdisk /dev/nvme0n1 #选择自己要使用的硬盘进行分区
 ### 安装系统
 
 ```bash
-pacstrap -K /mnt base base-devel linux linux-firmware btrfs-progs networkmanager vim sudo amd-ucode
+pacstrap -K /mnt base linux linux-firmware btrfs-progs networkmanager vim sudo amd-ucode
 
 # -K 初始化密钥
 # base 基本包
-# base-devel是编译其他软件的时候用的
 # linux是内核，可以更换
 # linux-firmware是固件
 # btrfs-progs是 Btrfs 文件系统的管理工具
@@ -819,38 +818,12 @@ cmatrix -r
    ```
    > 无论你怎么写提示词，都必须先告诉 AI 现在在 Arch Linux 的 Live 环境中，然后第一件事情必须是增加 cowspace 大小，否则运行空间会不够用。
 
-   你也可以带上更具体的需求。
-   ```text
-   We are in the archiso live. First, increase the cowspace size. Then auto install archlinux.
-   BTRFS + GRUB
-   root passwd: shorin
-   normal username: shorin, passwd: shorin
-   setup dual boot
-   ESP mount to /efi
-   GRUB install into /efi
-   link /efi/grub to /boot/grub
-   setup snapper
-   CN locale
-   ```
-   翻译成中文就是：
-   ```text
-   我们现在在 archiso 的 live 环境里，首先扩大 cowspace 的大小，然后自动安装 archlinux。
-   BTRFS 文件系统加 GRUB 引导加载程序
-   root 密码是 shorin
-   普通用户名是 shorin，密码是 shorin
-   配置双系统
-   ESP 挂载到 /efi
-   GRUB 装进 /efi
-   把 /efi/grub 链接到 /boot/grub
-   配置 snapper 快照程序
-   配置中文本地化
-   ```
-   更推荐的用法是让 AI 按照这篇文档进行安装。OpenCode 自带了网络搜索和网页爬取工具：
+   你也可以带上更具体的需求，不过更推荐的用法是让 AI 按照这篇文档进行安装。OpenCode 自带了网络搜索和网页爬取工具：
 
    ```text
    We are in the archiso live. First, increase the cowspace size. Then install archlinux following the guide from github.com/SHORiN-KiWATA/Shorin-ArchLinux-Guide.
    ```
-   此时 AI 会根据文档的步骤要求你进行一系列确认。当然你也可以补充更具体的需求。
+   此时 AI 会根据文档的步骤向你确认一系列事情。
 
 3. 重启
 
