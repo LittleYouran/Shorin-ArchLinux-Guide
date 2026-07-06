@@ -14,6 +14,8 @@
 
   如果想更进一步，获得最佳的桌面端 Linux 体验，[Arch Linux](https://archlinux.org/) 是最佳选择。
 
+  >Arch 处在精简、易用、自由的平衡点。拥有最新的软件、详尽的文档、最方便的软件安装方式、最偏向桌面端日用的社区氛围，甚至还有 Steam 的背书。
+
   Arch 的安装可能有些复杂，如果想要安装简单，开箱即用的 Arch Linux，以下是我推荐的 Arch 衍生发行版：
 
 - [CachyOS](https://cachyos.org/)
